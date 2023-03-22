@@ -10,6 +10,10 @@ if (isset($_GET['task_name']) ) {
     array_push($_SESSION['tasks'], $_GET['task_name']);
     unset($_GET['task_name']);
 }
+
+if (isset($_GET['clear']) ) {
+    unset($_SESSION['tasks']);
+}
 ?>
 
 <!DOCTYPE html>
@@ -53,7 +57,7 @@ if (isset($_GET['task_name']) ) {
 
             <form action="" method="get">
                 <input type="hidden" name="clear" value="clear">
-                <button type="submit">Limpar Tarefas</button>
+                    <button  class="button-clear" type="submit" >Limpar Tarefas</button>
             </form>
         </div>
         <div class="footer">

@@ -108,6 +108,21 @@ body {
   background: #5ccece;
 }
 
+.button-clear {
+  background: #48646d;
+  padding: 12px;
+  color: #fff;
+  border: none;
+  transition: background 0.3s;
+  border-radius: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.button-clear:hover {
+  background: #1b87a8;
+}
+
 .footer {
   background: #f0f0f0;
   border-radius: 4px;
